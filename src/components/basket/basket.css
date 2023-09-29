@@ -17,15 +17,18 @@
   --darkPurple: #460152; 
   }
 .trolley{
-    height:50px;
+    height:40px;
     width:50px;
+    display:flex;
+   
 }
 .mainBasket{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-evenly;
-    width: 0vw;
+    width: 30vw;
+    margin-right: 10px;
     position:absolute;
     right:0;
     height: 100vh;
@@ -40,10 +43,10 @@
 
 
 @keyframes slide-in{
-    from { transform: width 0vw}
-    to { transform: width 30vw}
+    from { transform: translateX(350px)}
+    to { transform: translateX(-10px)}
 }
 @keyframes slide-out{
-    from { transform: width 30vw}
-    to { transform: width 0vw}
+    from { transform: translateX(-10px)}
+    to { transform: translateX(350px)}
 }

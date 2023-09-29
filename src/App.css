@@ -23,4 +23,6 @@ font-variation-settings:  'SHRP' 100; */
   font-family: 'lazyDog';
   background-color: var(--white);
   width:100vw;
+  overflow-x:hidden;
+  overscroll-behavior-x:none;
 }

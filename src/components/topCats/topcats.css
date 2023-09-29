@@ -17,39 +17,46 @@
   --darkPurple: #460152; 
   }
 
-.navbar{
-    font-family: 'lazyDog';
+
+body {
+    background: #f7f3ea;
+    font-family: "lazyDog";
+}
+
+h1 {
+    font-size: 51.5px;
+    color: #BEA2CF;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 2px;
+    line-height: 5px;
+}
+
+.image-row-1, .image-row-2 {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    color: var(--darkPurple);
-    height: 100px;
-    
-}
-.NavLeft{
-    display: flex;
-    align-items: flex-end;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-around;
 
 }
-.NavRight{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    
+
+.cat-image {
+    width: 275px;
+    height: 275px;
+    border-radius: 25px;
 }
-.Current{
-    background-image: url('../images/0-navbar/mouse.png');
-    background-size:cover;
-    background-position: 0%;
-    height: 70px;
-    width: 150px;
-    padding-top:20px;
-}
-.Page{
-    background: none;
-    height: 70px;
-    width: 100px;
-    padding-top:10px;
+
+.grid-button{
+    display: block;
+    font-family: "lazyDog";
+    background-color:#F48B48;
+    border-radius: 25px;
+    border: none;
+
 }

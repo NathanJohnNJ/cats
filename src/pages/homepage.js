@@ -1,5 +1,6 @@
 import './style.css';
 import FetchCats from '../components/fetchCats';
+import TopCats from '../components/topCats';
 
 
 const HomePage = (props) => {
@@ -7,8 +8,8 @@ const HomePage = (props) => {
 
     return(
         <div className="homepage">
-            <FetchCats num='3' title='TOP CATS' from="home"/>
-            <FetchCats num='5' title='Featured...' from="home" basket={props.basket} setBasket={props.setBasket} />
+            <TopCats basket ={props.basket} setBasket={props.setBasket} />
+            <FetchCats num='5' title='Featured...'  basket={props.basket} setBasket={props.setBasket} />
 
         </div>
     )
