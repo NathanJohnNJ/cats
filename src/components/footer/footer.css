@@ -1,0 +1,30 @@
+@font-face {
+    font-family: lazyDog;
+    src: url(../../components/fonts/lazy_dog.ttf);
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV,SHRP@100,0.5,0;500,0.5,100;750,0.5,100&display=swap');
+  /* font-family: 'Geologica', sans-serif;
+  font-weight: 750;
+  font-variation-settings: 'wght' 750;
+  font-variation-settings: 'CRSV' 0.5;
+  font-variation-settings:  'SHRP' 100; */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  
+  :root{
+  --lightPurple: #BEA2CF;
+  --orange: #F48B48;
+  --white: #F7F3EA; 
+  --darkPurple: #460152; 
+  }
+
+  .footer{
+    max-width: 1100vw;
+    position:sticky;
+   margin-top: auto;
+
+  }
+  .footerImg{
+    width: 100%;
+    position:sticky;
+    margin-bottom: -10px;
+  }
