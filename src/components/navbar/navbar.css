@@ -16,7 +16,10 @@
   --white: #F7F3EA;
   --darkPurple: #460152; 
   }
-
+  .NavbarContainer{
+    display:flex;
+    flex-direction: column;
+  }
 .navbar{
     font-family: 'lazyDog';
     display: flex;
@@ -25,19 +28,17 @@
     justify-content: space-evenly;
     color: var(--darkPurple);
     height: 100px;
-    
+    font-size: 1.5vw;
 }
 .NavLeft{
     display: flex;
     align-items: flex-end;
-
 }
 .NavRight{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    
 }
 .Current{
     background-image: url('../images/0-navbar/mouse.png');
@@ -46,10 +47,14 @@
     height: 70px;
     width: 150px;
     padding-top:20px;
+    text-decoration: none;
 }
 .Page{
     background: none;
     height: 70px;
     width: 100px;
     padding-top:10px;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 10px;
 }

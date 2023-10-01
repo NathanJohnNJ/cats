@@ -55,8 +55,9 @@
     top:0;
     font-size:2vw;
     letter-spacing: 6px;
-    margin-top: -0.5px;
-    text-shadow: -2px 2px 3px var(--lightPurple);
+    margin-top: 2px;
+    text-shadow: -2px -2px 0 var(--darkPurple), 2px -2px 0 var(--darkPurple), -2px 2px 0 var(--darkPurple), 2px 2px 0 var(--darkPurple);
+
   }
   
   .catImg{

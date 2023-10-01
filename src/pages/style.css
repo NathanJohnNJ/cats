@@ -16,3 +16,16 @@
   --white: #F7F3EA;
   --darkPurple: #460152; 
   }
+  .adoptionsTitle{
+    margin-bottom:-150px;
+    margin-top: 75px;
+  }
+  .homeTitle{
+    letter-spacing: 2px;
+    font-size: 4vw;
+    margin-bottom: -125px;
+  }
+  .flowChart{
+    margin-top: 175px;
+  }
+  
