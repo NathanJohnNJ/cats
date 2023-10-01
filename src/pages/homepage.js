@@ -4,7 +4,7 @@ import TopCats from '../components/topCats';
 
 
 const HomePage = (props) => {
-
+    props.setPage("home");
 
     return(
         <div className="homepage">

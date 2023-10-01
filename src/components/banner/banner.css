@@ -17,14 +17,13 @@
   --darkPurple: #460152; 
   }
 
-  .footer{
+  .banner{
     max-width: 100vw;
     position:sticky;
     margin-top: auto;
-    overflow:hidden;
 
   }
-  .footerImg{
+  .bannerImg{
     width: 100%;
     position:sticky;
     margin-bottom: -10px;
