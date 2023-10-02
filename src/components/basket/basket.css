@@ -20,7 +20,7 @@
     height:40px;
     width:50px;
     display:flex;
-   
+   margin-top: 10px;
 }
 .mainBasket{
     display: flex;
@@ -40,7 +40,30 @@
     right: 2%;
 }
 
+.ReactModal__Overlay {
+    opacity: 0;
+    transform: translateX(200px);
+    transition: all 2000ms ease-in-out;
+}
 
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+    transform: translateX(0px)
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+    transform: translateX(200px)
+}
+
+.basketItem{
+    display: flex;
+    flex-direction: row;
+}
+.basketRight{
+    display:flex;
+    flex-direction: column;
+}
 
 @keyframes slide-in{
     from { transform: translateX(350px)}

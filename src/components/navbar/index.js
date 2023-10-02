@@ -13,7 +13,7 @@ const NavBar = (props) => {
                     <NavLink className={({isActive}) => isActive ? "Current": "Page" } to="/success">PAST PAIRINGS</NavLink>
                 </div>
                 <div className="NavRight">
-                    <Basket selectedCats={props.selectedCats}/>
+                    <Basket basket={props.basket} setBasket={props.setBasket}/>
                 </div>
             </div>
         </div>

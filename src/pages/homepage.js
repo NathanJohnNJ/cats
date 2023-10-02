@@ -11,7 +11,7 @@ const HomePage = (props) => {
         <div className="homepage">
             <h1 className="homeTitle">CATS 4 LYF</h1>
             <Banner banner={BannerHome} />
-            <TopCats basket ={props.basket} setBasket={props.setBasket} />
+            <TopCats basket={props.basket} setBasket={props.setBasket} />
             <FetchCats num='5' title='Featured...'  basket={props.basket} setBasket={props.setBasket} />
 
         </div>

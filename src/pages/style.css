@@ -16,6 +16,9 @@
   --white: #F7F3EA;
   --darkPurple: #460152; 
   }
+  body{
+    overflow-x:hidden;
+  }
   .adoptionsTitle{
     margin-bottom:-150px;
     margin-top: 75px;
@@ -28,4 +31,36 @@
   .flowChart{
     margin-top: 175px;
   }
-  
+  .images{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .girlImg{
+    width: 350px;
+    align-self: flex-start;
+    margin-left: 25vw;
+    margin-top: 5vh;
+    margin-bottom: -10vh;
+  }
+  .manImg{
+    width:350px;
+    align-self: flex-end;
+    margin-right: 25vw;
+    margin-top: -20vh;
+  }
+  .familyImg{
+    width:350px;
+    margin-left: 35vw;
+    margin-top: 5vh;
+  }
+  .successStories{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 450;
+    font-size: 1.5vw;
+  }
+  .pastTitle{
+    margin-bottom: -130px;
+    margin-top: 40px;
+    margin-left: -50vw;
+  }

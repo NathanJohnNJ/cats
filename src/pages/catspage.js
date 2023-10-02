@@ -11,10 +11,10 @@ const CatsPage = (props) => {
             <h1 className="adoptionsTitle">ADOPTIONS</h1>
             <Banner banner={BannerTest2} />
             <img className="flowChart" src={flowchart} alt="Flowchart"></img>
-            <FetchCats title="AVAILABLE ADOPTIONS" num='4' basket={props.basket} setBasket={props.setBasket} />
-            <FetchCats num='4' basket={props.basket} setBasket={props.setBasket} />
-            <FetchCats num='4' basket={props.basket} setBasket={props.setBasket} />
-            <FetchCats num='4' basket={props.basket} setBasket={props.setBasket} />
+            <FetchCats title="AVAILABLE ADOPTIONS" num='4' showBasket="true" basket={props.basket} setBasket={props.setBasket} />
+            <FetchCats num='4' showBasket="true" basket={props.basket} setBasket={props.setBasket} />
+            <FetchCats num='4' showBasket="true" basket={props.basket} setBasket={props.setBasket} />
+            <FetchCats num='4' showBasket="true" basket={props.basket} setBasket={props.setBasket} />
         </div>
     )
 }

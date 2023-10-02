@@ -1,4 +1,4 @@
-import catBanner from '../images/6-footer/catbanner.png';
+import catBanner from '../images/footer.png';
 import './footer.css'
 
 const Footer = () => {

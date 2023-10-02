@@ -14,7 +14,7 @@ const MoreInfo = (props) => {
     }
     function onClickHandler(cat){
         const basket = props.basket
-        const newBasket = basket.concat(cat)
+        const newBasket = basket.push(cat)
         props.setBasket(newBasket)
         console.log(`Basket updated to ${props.basket}. This should include ${cat}.`)
     }

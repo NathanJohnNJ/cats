@@ -16,11 +16,14 @@ const FetchCats = (props) => {
         const random = Math.floor(Math.random() * names.length);
         return(names[random])
     }
-    function onClickHandler(cat){
+    function onClickHandler(i){
+        // preventDefault()
         const basket = props.basket
-        const newBasket = basket.concat(cat)
+        console.log("This is the value of basket before adding the new cat - ", basket)
+        const newBasket = basket.push(cats[i])
+        console.log("This is the value of 'newBasket' - ", newBasket)
         props.setBasket(newBasket)
-        console.log(`Basket updated to ${props.basket}. This should include ${cat}.`)
+        console.log(`Basket updated to ${props.basket}. This should include ${cats[i]}.`)
     }
   
     const fetchData = async () => {
@@ -35,24 +38,24 @@ const FetchCats = (props) => {
             throw new Error(response.statusText)
             }
         const data = await response.json()
-        console.log(data)
+        // console.log(data)
         const catData = data.map((cat, i) => {
-            return {
-                catImage: cat.url,
-                catBreed: cat.breeds[0].name,
-                catCF: cat.breeds[0].child_friendly,
-                catTemp: cat.breeds[0].temperament,
-                catDF: cat.breeds[0].dog_friendly,
-                catEnergy: cat.breeds[0].energy_level,
-                catHypoallergenic: (cat.breeds[0].hypoallergenic)?'NO':'YES',
-                catName: catName(),
-                catPrice: catPrice()
-            }
+          return {
+            catKey: i,
+            catImage: cat.url,
+            catBreed: cat.breeds[0].name,
+            catCF: cat.breeds[0].child_friendly,
+            catTemp: cat.breeds[0].temperament,
+            catDF: cat.breeds[0].dog_friendly,
+            catEnergy: cat.breeds[0].energy_level,
+            catHypoallergenic: (cat.breeds[0].hypoallergenic)?'NO':'YES',
+            catName: catName(),
+            catPrice: catPrice()
+          }
         })
         setCats(catData);
-        console.log("This is the value of cats after setCats() has been run", cats)
         } catch (err) {
-            console.log(err)
+          console.log(err)
         }
     }
  // eslint-disable-next-line
@@ -63,8 +66,9 @@ const FetchCats = (props) => {
     <div className="fetchCatsDiv">
         {(props.title)?<h1 className="title">{props.title}</h1>:<></>}
       <div className="cats">
+        {/* {console.log("This is the value of cats before the map ", cats)} */}
       {cats.map((cat, i) => {
-        console.log("This is cat from within the map", cat)
+        // console.log("This is cat from within the map", cat)  
         return(
         <div key={i} className="map">
           <div className="catInfo">
@@ -79,8 +83,8 @@ const FetchCats = (props) => {
               <h4 className="levelsValue">{cat.catDF}/5</h4>
             </div>
           </div>
-          <MoreInfo from={props.from} render={cat} cat={cat} />
-          {(props.basket)?<button id="basketBtn" onClick={(cat) => {onClickHandler(cat)}}>Adopt Me!</button>:<></>}
+          <MoreInfo render={cat} cat={cat} />
+          {(props.showBasket)?<button id="basketBtn" onClick={() => {onClickHandler(i)}}>Adopt Me!</button>:<></>}
         </div>)
       })}
      </div>
